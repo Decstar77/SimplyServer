@@ -1,9 +1,22 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/api/scan/{rfid}", (string rfid) => {
-    Console.WriteLine($"GET tag {rfid}.");
-    bool isValid = true;
+bool VerifyRFIDTag( string rfid ) {
+    if ( rfid == "0A 48 3A 29" ) {
+        return true;
+    } else if ( rfid == "99 F7 5F B3" ) {
+        return false;
+    } else {
+        return false;
+    }
+}
+
+app.MapGet("/api/scan/{rfid}", (HttpContext httpContext, string rfid) => {
+    var ipAddress = httpContext.Connection.RemoteIpAddress.ToString();
+    Console.WriteLine($"Request from IP: {ipAddress}");
+
+    Console.WriteLine($"GET /api/scan/{rfid}.");
+    bool isValid = VerifyRFIDTag(rfid);
     if (isValid)
     {
         Console.WriteLine($"RFID tag {rfid} verified successfully.");
