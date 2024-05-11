@@ -97,3 +97,4 @@ C:\Projects\2024\simplyserver\SimplyServer\obj\Debug\net8.0\refint\SimplyServer.
 C:\Projects\2024\simplyserver\SimplyServer\obj\Debug\net8.0\SimplyServer.pdb
 C:\Projects\2024\simplyserver\SimplyServer\obj\Debug\net8.0\SimplyServer.genruntimeconfig.cache
 C:\Projects\2024\simplyserver\SimplyServer\obj\Debug\net8.0\ref\SimplyServer.dll
+C:\Projects\2024\simplyserver\SimplyServer\obj\Debug\net8.0\SimplyServer.sourcelink.json

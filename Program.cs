@@ -1,7 +1,20 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/api/scan/{rfid}", (string rfid) => {
+    Console.WriteLine($"GET tag {rfid}.");
+    bool isValid = true;
+    if (isValid)
+    {
+        Console.WriteLine($"RFID tag {rfid} verified successfully.");
+        return new { Status = "Success", Message = $"RFID tag {rfid} verified successfully." };
+    }
+    else
+    {
+        Console.WriteLine($"Failed to verify RFID tag {rfid}.");
+        return new { Status = "Error", Message = $"Failed to verify RFID tag {rfid}." };
+    }
+});
 
 app.Run();
 
