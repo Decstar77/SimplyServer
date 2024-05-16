@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "e0cZc2p14y7WQeczftsgf8llh+DDMoSpiX6vhMmRqboL7AwDkipT2ZHwWscOyIYJcUPPHhbDncGnFYWPPF8FSQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\2024\\earnest\\ServerApp\\ServerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\porte\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\porte\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.1\\swashbuckle.aspnetcore.swagger.6.6.1.nupkg.sha512",
+    "C:\\Users\\porte\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.1\\swashbuckle.aspnetcore.swaggergen.6.6.1.nupkg.sha512",
+    "C:\\Users\\porte\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.1\\swashbuckle.aspnetcore.swaggerui.6.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}
