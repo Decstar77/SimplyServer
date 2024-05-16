@@ -39,7 +39,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<StateWebSocketManager>();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
-builder.WebHost.UseUrls( "http://localhost:6969" );
+//builder.WebHost.UseUrls( "http://localhost:6969" );
 
 var app = builder.Build();
 
